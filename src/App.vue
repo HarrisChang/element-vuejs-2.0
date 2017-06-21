@@ -22,15 +22,16 @@ export default {
 }
 </script>
 
-<style>
-  #app .tab{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    display: flex;
-  }
-  #app .tab .tab-item{
-    flex:1;
-    text-align: center;
+<style lang="less" rel="stylesheet/less">
+  #app{
+    .tab{
+      width:100%;
+      height:40px;
+      line-height:40px;
+      display: flex;
+      .tab-item{
+        flex:1;
+      }
+    }
   }
 </style>
