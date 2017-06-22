@@ -58,25 +58,30 @@
 
 .border-1px{
   position: relative;
-  &::after{
-    content: '';
-    display: block;
+  &:after{
     position: absolute;
-    left: 0;
+    width: 100%;
+    content: '';
     bottom: 0;
-    width:100%;
-    border-top: 1px solid rgba(7, 17, 27, 0.1);
-    transform: scaleY(0.7)
+    left: 0;
+    border-top:1px solid rgba(7,17,27,0.1);
   }
 }
-
-@media (min-device-pixel-ratio:1.5){
+@media only screen and (-webkit-min-device-pixel-ratio:1.5){
   .border-1px:after{
-    transform: scaleY(0.7)
+    -webkit-transform:scaleY(0.7);
+    -moz-transform:scaleY(0.7);
+    -ms-transform:scaleY(0.7);
+    -o-transform:scaleY(0.7);
+    transform:scaleY(0.7);
   }
 }
-@media (min-device-pixel-ratio:2){
+@media only screen and (-webkit-min-device-pixel-ratio:2.0){
   .border-1px:after{
-    transform:scaleY(0.5)
+    -webkit-transform:scaleY(0.5);
+    -moz-transform:scaleY(0.5);
+    -ms-transform:scaleY(0.5);
+    -o-transform:scaleY(0.5);
+    transform:scaleY(0.5);
   }
 }
