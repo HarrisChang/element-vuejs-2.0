@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import VueResource from 'vue-resource'
-import vHeader from '@/components/header/header'
 import Goods from '@/components/goods/goods'
 import Seller from '@/components/seller/seller'
 import Ratings from '@/components/ratings/ratings'

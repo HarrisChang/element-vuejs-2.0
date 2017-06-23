@@ -34,6 +34,7 @@
 </script>
 
 <style lang="less" rel="stylesheet/less">
+  @import "../../common/less/mixin.less";
 	.header{
 		color: #fff;
 		.content-wrapper{
@@ -51,8 +52,12 @@
 					margin: 2px 0 8px 0;
 					.brand{
 						display: inline-block;
-						width: 30px;
 						height: 18px;
+            width: 30px;
+            vertical-align: top;
+            .bg-image("brand");
+            background-size: 30px 18px;
+            background-repeat: no-repeat;
 					}
 				}
 			}
