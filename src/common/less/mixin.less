@@ -11,6 +11,12 @@
   }
 }
 
+.border-none(){
+  &:after{
+    display: none;
+  }
+}
+
 /* @2x.png image source*/
 .bg-image(@url){
   background-image: ~"url('@{url}@2x.png')";
